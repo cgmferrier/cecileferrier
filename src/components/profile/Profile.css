@@ -31,7 +31,7 @@
     padding: 0.67em 0;
     position: absolute;
     top: 0;
-    width: calc(100% - 0.67em);
+    width: 100%;
 }
 
 .navbar.open {
@@ -44,8 +44,8 @@
 
 .profile {
     color: #282c34;
-    padding: 0 0.67em;
     position: relative;
+    height: 100%;
 }
 
 .profile-header {
@@ -55,7 +55,7 @@
     font-weight: 500;
     justify-content: space-between;
     margin-bottom: 0.67em;
-    padding-bottom: 0.67em;
+    padding: 0 0.67em 0.67em;
 }
 
 li:first-child {
@@ -80,6 +80,7 @@ li:first-child {
         flex-direction: row;
         left: inherit;
         position: relative;
+        height: 0;
     }
 
     li {

@@ -1,14 +1,16 @@
 import './Projects.css';
 import chattyTherapy from '../../img/chatty-learning.png';
-import send from '../../img/send.jpeg';
+import livingmap from '../../img/livingmap.png';
 import medivet from '../../img/medivet.jpg';
+import polestar from '../../img/polestar.png';
 import runpath from '../../img/runpath.png';
+import send from '../../img/send.jpeg';
+import sensat from '../../img/sensat.svg';
 
 function Projects() {
   return (
     <section className="section">
       <h2 aria-label="Projects" className="subtitle">Projects</h2>
-      <p>I have worked on numerous projects which you can find below.</p>
       <div className="project">
         <img src={chattyTherapy} alt="Chatty Therapy" className="project-logo"/>
         <div aria-label="Chatty therapy project" className="project-description">
@@ -57,7 +59,7 @@ function Projects() {
           </div>
           <div className="project-details">
             While working with Medivet, I rewrote the <span className="bold">pet details page</span> used by medical staff to <span className="bold">register a pet</span> in the system.
-            I also rewrote the frontend for <span className="bold">medication/medical supplies invoice</span> functionality.
+            I also rewrote the frontend for <span className="bold">medication/medical supplies billing</span> functionality.
           </div>
         </div>
       </div>
@@ -76,13 +78,43 @@ function Projects() {
         </div>
       </div>
       <div className="project">
-        Sensat
+        <img src={sensat} alt="Sensat" className="project-logo"/>
+        <div aria-label="Sensat project" className="project-description">
+          <div className="project-details">
+            Sensat hired me to <span className="bold">bring to life</span> the first version of their product: a <span className="bold">digital twin</span> of a construction site in London.
+          </div>
+          <div className="project-details">
+            One of my responsibilities with the team was to <span className="bold">tutor junior developers</span>, and to introduce <span className="bold">coding standards and best practices</span>.
+          </div>
+          <div className="project-details">
+            I also did some <span className="bold">Agile consulting</span> to help the team work with this methodology.
+          </div>
+        </div>
       </div>
       <div className="project">
-        Polestar
+        <img src={polestar} alt="Polestar" className="project-logo"/>
+        <div aria-label="Polestar project" className="project-description">
+          <div className="project-details">
+            I joined the team at Polestar to <span className="bold">rewrite their codebase</span>: moving <span className="bold">from Backbone to Angular</span>.
+            Their web application allowed <span className="bold">maritime companies to track</span> (amongst other things) their <span className="bold">ships at sea</span>.
+          </div>
+          <div className="project-details">
+            Working in an Agile environment, I also rewrote some of the app's functionalities to be more <span className="bold">performant and user-friendly</span>.
+          </div>
+        </div>
       </div>
       <div className="project">
-        LivingMap
+        <img src={livingmap} alt="Living Map" className="project-logo"/>
+        <div aria-label="Living Map project" className="project-description">
+          <div className="project-details">
+            Living Map hired me to work on their project for <span className="bold">Heathrow terminal 5</span>.
+            The project was to create an <span className="bold">interactive map</span> that would be then used by passengers on <span className="bold">giant touch screens</span>.
+          </div>
+          <div className="project-details">
+            Another project I worked on with them was to create an <span className="bold">interactive map of the Met museum in NYC</span>.
+            Each <span className="bold">gallery and room would be displayed</span>, and when interacted with, <span className="bold">animated elements</span> would show visitors information about that room at this date.
+          </div>
+        </div>
       </div>
     </section>
   )
