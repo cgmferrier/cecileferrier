@@ -1,0 +1,30 @@
+.skillset {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.skill-cell {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.67em;
+}
+
+.skill-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-logo {
+    border-radius: 6px;
+    margin-right: 0.67em;
+    width: 3em;
+}
+
+@media screen and (min-width: 768px) {
+    .skill-col {
+        flex-direction: row;
+        justify-content: space-around;
+        min-width: 50%;
+    }
+}

@@ -4,7 +4,8 @@ import logo from '../../img/CF.svg';
 import menuIcon from '../../img/burger-bar.png';
 import close from '../../img/close.png';
 import About from '../about/About';
-import Projects from "../projects/Projects";
+import Projects from '../projects/Projects';
+import Skills from '../skills/Skills';
 
 class Profile extends React.Component {
   state;
@@ -39,6 +40,7 @@ class Profile extends React.Component {
         </ul>
         <About />
         <Projects />
+        <Skills />
       </section>
     );
   }
