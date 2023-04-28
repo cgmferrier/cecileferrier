@@ -15,37 +15,37 @@ function Skills() {
       <div className="skillset">
         <div className="skill-col">
           <div className="skill-cell">
-            <img src={javascript} alt="Javascript" aria-label="Javascript" className="skill-logo"/>
+            <img src={javascript} alt="Javascript" aria-label="Javascript" title="Javascript" className="skill-logo"/>
             Javascript
           </div>
           <div className="skill-cell">
-            <img src={typescript} alt="TypeScript" aria-label="TypeScript" className="skill-logo"/>
+            <img src={typescript} alt="TypeScript" aria-label="TypeScript" title="TypeScript" className="skill-logo"/>
             TypeScript
           </div>
           <div className="skill-cell">
-            <img src={angular} alt="Angular" aria-label="Angular" className="skill-logo"/>
+            <img src={angular} alt="Angular" aria-label="Angular" title="Angular" className="skill-logo"/>
             Angular
           </div>
           <div className="skill-cell">
-            <img src={react} alt="React" aria-label="React" className="skill-logo react"/>
+            <img src={react} alt="React" aria-label="React" title="React" className="skill-logo react"/>
             React
           </div>
         </div>
         <div className="skill-col">
           <div className="skill-cell">
-            <img src={ngrx} alt="NgRx" aria-label="NgRx" className="skill-logo"/>
+            <img src={ngrx} alt="NgRx" aria-label="NgRx" title="NgRx" className="skill-logo"/>
             NgRx
           </div>
           <div className="skill-cell">
-            <img src={redux} alt="Redux" aria-label="Redux" className="skill-logo"/>
+            <img src={redux} alt="Redux" aria-label="Redux" title="Redux" className="skill-logo"/>
             Redux
           </div>
           <div className="skill-cell">
-            <img src={rxjs} alt="RxJS" aria-label="RxJS" className="skill-logo"/>
+            <img src={rxjs} alt="RxJS" aria-label="RxJS" title="RxJS" className="skill-logo"/>
             RxJS
           </div>
           <div className="skill-cell">
-            <img src={sass} alt="Sass" aria-label="Sass" className="skill-logo"/>
+            <img src={sass} alt="Sass" aria-label="Sass" title="Sass" className="skill-logo"/>
             Sass
           </div>
         </div>

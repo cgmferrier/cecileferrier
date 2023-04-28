@@ -1,0 +1,11 @@
+.contact {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.67em;
+}
+
+.contact-logo {
+    margin-right: 0.67em;
+    width: 3em;
+}
