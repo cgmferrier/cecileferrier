@@ -33,14 +33,28 @@
     position: absolute;
     top: 0;
     width: 100%;
+
+    transition: left 0.5s ease-in-out;
 }
 
 .navbar.open {
-    left: inherit;
+    left: 0;
 }
 
 .nav-img {
     margin-top: 0.67em;
+}
+
+.nav-item {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding: 0 0.67em;
+    width: 100%;
+}
+
+.nav-item:nth-child(odd) {
+    background: rgba(27,167,173, 0.05);
 }
 
 .profile {
@@ -55,7 +69,6 @@
     display: flex;
     font-weight: 500;
     justify-content: space-between;
-    margin-bottom: 0.67em;
     padding: 0 0.67em 0.67em;
 }
 
@@ -77,11 +90,24 @@ li:first-child {
         display: none
     }
 
+    .nav-item {
+        cursor: pointer;
+        display: block;
+    }
+
+    .nav-item:nth-child(odd) {
+        background: rgba(27,167,173, 0);
+    }
+
     .navbar {
         flex-direction: row;
+        height: auto;
         left: inherit;
         position: relative;
-        height: 0;
+    }
+
+    .profile-header {
+        margin-bottom: 0.67em;
     }
 
     li {

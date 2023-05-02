@@ -34,10 +34,10 @@ class Profile extends React.Component {
         </div>
         <ul className={this.state.menuOpen ? "navbar open" : "navbar"} aria-label="Navigation">
           <li><img src={close} alt="Close menu" className="close" onClick={this.toggleMenu}/></li>
-          <li aria-label="About">About</li>
-          <li aria-label="Projects">Projects</li>
-          <li aria-label="Skills">Skills</li>
-          <li aria-label="Contact">Contact</li>
+          <li aria-label="About" className="nav-item">About</li>
+          <li aria-label="Projects" className="nav-item">Projects</li>
+          <li aria-label="Skills" className="nav-item">Skills</li>
+          <li aria-label="Contact" className="nav-item">Contact</li>
         </ul>
         <About />
         <Projects />

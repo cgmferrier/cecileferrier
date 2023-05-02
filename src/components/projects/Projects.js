@@ -112,6 +112,8 @@ function Projects() {
           </div>
           <div className="project-details">
             Another project I worked on with them was to create an <span className="bold">interactive map of the Met museum in NYC</span>.
+          </div>
+          <div className="project-details">
             Each <span className="bold">gallery and room would be displayed</span>, and when interacted with, <span className="bold">animated elements</span> would show visitors information about that room at this date.
           </div>
         </div>
