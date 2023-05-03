@@ -28,10 +28,13 @@
     .project {
         align-items: center;
         display: flex;
-        justify-content: space-between;
     }
 
     .project-description {
-        text-align: right;
+        flex: 4;
+    }
+
+    .project-logo__container {
+        flex: 1;
     }
 }

@@ -12,7 +12,11 @@ function Projects() {
     <section className="section projects">
       <h2 aria-label="Projects" className="subtitle">Projects</h2>
       <div className="project">
-        <img src={chattyTherapy} alt="Chatty Therapy" className="project-logo"/>
+        <div className="project-logo__container">
+          <a href="https://chatty-learning.com/" aria-label="Chatty Therapy website link" target="_blank" rel="noopener noreferrer">
+            <img src={chattyTherapy} aria-label="Chatty Therapy logo" alt="Chatty Therapy" className="project-logo"/>
+          </a>
+        </div>
         <div aria-label="Chatty therapy project" className="project-description">
           <div className="project-details">
             I have helped the team at Chatty Therapy on a few occasions. They needed my help to <span className="bold">implement</span> a game similar to the well known <span className="bold">Kim's game</span>.
@@ -28,7 +32,11 @@ function Projects() {
         </div>
       </div>
       <div className="project">
-        <img src={send} alt="Send" className="logo-round project-logo"/>
+        <div className="project-logo__container">
+          <a href="https://send.technology/" aria-label="Send website link" target="_blank" rel="noopener noreferrer">
+            <img src={send} alt="Send" aria-label="Send logo" className="logo-round project-logo"/>
+          </a>
+        </div>
         <div aria-label="Send project" className="project-description">
           <div className="project-details">
             My role as part of the Team at <span className="bold">Send</span>, was to help implement new features for their Workbench application directed to underwriters.
@@ -52,19 +60,27 @@ function Projects() {
         </div>
       </div>
       <div className="project">
-        <img src={medivet} alt="Medivet" className="project-logo"/>
+        <div className="project-logo__container">
+          <a href="https://www.medivet.co.uk/" aria-label="Medivet website link" target="_blank" rel="noopener noreferrer">
+            <img src={medivet} alt="Medivet" aria-label="Medivet logo" className="project-logo"/>
+          </a>
+        </div>
         <div aria-label="Medivet project" className="project-description">
           <div className="project-details">
             Medivet needed a Frontend Developer to join their team in order to <span className="bold">rewrite their whole desktop application</span> used by vets and vet nurses in clinics.
           </div>
           <div className="project-details">
             While working with Medivet, I rewrote the <span className="bold">pet details page</span> used by medical staff to <span className="bold">register a pet</span> in the system.
-            I also rewrote the frontend for <span className="bold">medication/medical supplies billing</span> functionality.
+            I also rewrote the frontend for their <span className="bold">medication/medical supplies billing</span> functionality.
           </div>
         </div>
       </div>
       <div className="project">
-        <img src={runpath} alt="Runpath" className="project-logo"/>
+        <div className="project-logo__container">
+          <a href="https://www.runpath.com/" aria-label="Runpath website link" target="_blank" rel="noopener noreferrer">
+            <img src={runpath} alt="Runpath" aria-label="Runpath logo" className="project-logo"/>
+          </a>
+        </div>
         <div aria-label="Runpath project" className="project-description">
           <div className="project-details">
             While working at Runpath, I implemented a web application targeted to <span className="bold">small and medium companies</span>.
@@ -78,7 +94,11 @@ function Projects() {
         </div>
       </div>
       <div className="project">
-        <img src={sensat} alt="Sensat" className="project-logo"/>
+        <div className="project-logo__container">
+          <a href="https://www.sensat.co/" aria-label="Sensat website link" target="_blank" rel="noopener noreferrer">
+            <img src={sensat} alt="Sensat" aria-label="Sensat logo" className="project-logo"/>
+          </a>
+        </div>
         <div aria-label="Sensat project" className="project-description">
           <div className="project-details">
             Sensat hired me to <span className="bold">bring to life</span> the first version of their product: a <span className="bold">digital twin</span> of a construction site in London.
@@ -92,7 +112,11 @@ function Projects() {
         </div>
       </div>
       <div className="project">
-        <img src={polestar} alt="Polestar" className="project-logo"/>
+        <div className="project-logo__container">
+          <a href="https://www.polestarglobal.com/" aria-label="Polestar website link" target="_blank" rel="noopener noreferrer">
+            <img src={polestar} alt="Polestar" aria-label="Polestar logo" className="project-logo"/>
+          </a>
+        </div>
         <div aria-label="Polestar project" className="project-description">
           <div className="project-details">
             I joined the team at Polestar to <span className="bold">rewrite their codebase</span>: moving <span className="bold">from Backbone to Angular</span>.
@@ -104,7 +128,11 @@ function Projects() {
         </div>
       </div>
       <div className="project">
-        <img src={livingmap} alt="Living Map" className="project-logo"/>
+        <div className="project-logo__container">
+          <a href="https://www.livingmap.com/" aria-label="Living Map website link" target="_blank" rel="noopener noreferrer">
+            <img src={livingmap} alt="Living Map" aria-label="Living Map" className="project-logo"/>
+          </a>
+        </div>
         <div aria-label="Living Map project" className="project-description">
           <div className="project-details">
             Living Map hired me to work on their project for <span className="bold">Heathrow terminal 5</span>.
