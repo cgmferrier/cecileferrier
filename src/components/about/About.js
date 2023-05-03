@@ -1,8 +1,8 @@
 import './About.css';
 
-function About() {
+function About({ sticky }) {
   return (
-    <section className="section about">
+    <section className={sticky ? "section about sticky" : "section about"}>
       <h2 aria-label="About" className="subtitle">About</h2>
       <p className="justify">
         I am a Frontend Developer with <span className="bold">over 10 years experience</span>. I love my job and more specifically the fact that I can work in any industry and help lots of companies achieve their goals.

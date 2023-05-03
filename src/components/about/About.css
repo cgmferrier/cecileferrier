@@ -1,7 +1,9 @@
-.about {
-
+.about.sticky {
+    margin-top: 92px;
 }
 
 @media screen and (min-width: 768px) {
-
+    .about.sticky {
+        margin-top: 0;
+    }
 }

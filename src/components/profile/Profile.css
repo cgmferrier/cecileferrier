@@ -73,6 +73,13 @@
     padding: 0 0.67em 0.67em;
 }
 
+.profile-header.sticky {
+    background: white;
+    position: fixed;
+    top: 0;
+    width: calc(100% - 1.34em);
+}
+
 li:first-child {
     position: absolute;
     right: 0.67em;
@@ -105,6 +112,11 @@ li:first-child {
         height: auto;
         left: inherit;
         position: relative;
+    }
+
+    .navbar.sticky {
+        margin-top: calc(92px + 0.67em);
+        z-index: -1;
     }
 
     .profile-header {

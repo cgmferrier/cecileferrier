@@ -1,56 +1,68 @@
 import './Profile.css';
-import React from 'react';
-import logo from '../../img/CF.svg';
-import menuIcon from '../../img/burger-bar.png';
-import close from '../../img/close.png';
 import About from '../about/About';
 import Contact from '../contact/Contact';
 import Projects from '../projects/Projects';
 import Skills from '../skills/Skills';
-import scrollIntoView from "scroll-into-view";
+import close from '../../img/close.png';
+import logo from '../../img/CF.svg';
+import menuIcon from '../../img/burger-bar.png';
+import scrollIntoView from 'scroll-into-view';
+import { cl } from 'dynamic-class-list';
+import { useEffect, useRef, useState } from 'react';
 
-class Profile extends React.Component {
-  state;
+const Profile = () => {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      menuOpen: false
-    };
+  const [ menuOpen, setMenuOpen ] = useState(false);
+  const [ sticky, setSticky ] = useState(false);
+
+  const handleStickyNavbar = () => {
+    const screenHeight = window.innerHeight;
+    const scrollPosition = window.scrollY;
+
+    setSticky(scrollPosition > screenHeight);
   }
-  scrollTo = (className) => {
+
+  const scrollTo = (className) => {
     scrollIntoView(document.getElementsByClassName(className)[0]);
-    this.toggleMenu();
+    toggleMenu();
   }
 
-  toggleMenu = () => {
-    this.setState({ menuOpen: !this.state.menuOpen });
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
   }
 
-  render() {
-    return (
-      <section className="profile">
-        <div className="profile-header">
-          <div className="logo">
-            <img src={logo} alt="Cecile Ferrier" className="nav-img" />
-            <div className="nav-title">Cécile Ferrier</div>
-          </div>
-          <img src={menuIcon} alt="Menu" className="menu" onClick={this.toggleMenu}/>
+  let navBarHeight = useRef(document.getElementsByClassName('profile-header')[0]?.scrollHeight);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleStickyNavbar);
+
+    return () => {
+      window.removeEventListener('scroll', handleStickyNavbar);
+    }
+  }, [sticky]);
+
+  return (
+    <section className="profile">
+      <div className={cl({ 'profile-header': true, sticky }) }>
+        <div className="logo">
+          <img src={logo} alt="Cecile Ferrier" className="nav-img" />
+          <div className="nav-title">Cécile Ferrier</div>
         </div>
-        <ul className={this.state.menuOpen ? "navbar open" : "navbar"} aria-label="Navigation">
-          <li><img src={close} alt="Close menu" className="close" onClick={this.toggleMenu}/></li>
-          <li aria-label="About" className="nav-item" onClick={() => this.scrollTo('profile-header')}>About</li>
-          <li aria-label="Projects" className="nav-item" onClick={() => this.scrollTo('projects')}>Projects</li>
-          <li aria-label="Skills" className="nav-item" onClick={() => this.scrollTo('skills')}>Skills</li>
-          <li aria-label="Contact" className="nav-item" onClick={() => this.scrollTo('contact')}>Contact</li>
-        </ul>
-        <About />
-        <Projects />
-        <Skills />
-        <Contact />
-      </section>
-    );
-  }
+        <img src={menuIcon} alt="Menu" className="menu" onClick={toggleMenu}/>
+      </div>
+      <ul className={cl({ navbar: true, open: menuOpen, sticky })} aria-label="Navigation">
+        <li><img src={close} alt="Close menu" className="close" onClick={toggleMenu}/></li>
+        <li aria-label="About" className="nav-item" onClick={() => scrollTo('profile-header')}>About</li>
+        <li aria-label="Projects" className="nav-item" onClick={() => scrollTo('projects')}>Projects</li>
+        <li aria-label="Skills" className="nav-item" onClick={() => scrollTo('skills')}>Skills</li>
+        <li aria-label="Contact" className="nav-item" onClick={() => scrollTo('contact')}>Contact</li>
+      </ul>
+      <About sticky={sticky} />
+      <Projects />
+      <Skills />
+      <Contact />
+    </section>
+  );
 }
 
 export default Profile;
