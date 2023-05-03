@@ -25,7 +25,9 @@ body {
 }
 
 .header {
-  background-color: #282c34;
+  background-position: center bottom;
+  background-image: url('img/blue-bg.jpg');
+  background-attachment: fixed;
   min-height: 100%;
   width: 100%;
   display: flex;

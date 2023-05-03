@@ -8,7 +8,7 @@ import logo from '../../img/CF.svg';
 import menuIcon from '../../img/burger-bar.png';
 import scrollIntoView from 'scroll-into-view';
 import { cl } from 'dynamic-class-list';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Profile = () => {
 
@@ -23,15 +23,13 @@ const Profile = () => {
   }
 
   const scrollTo = (className) => {
-    scrollIntoView(document.getElementsByClassName(className)[0]);
+    scrollIntoView(document.getElementsByClassName(className)[0], { align: { topOffset: 93 }});
     toggleMenu();
   }
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   }
-
-  let navBarHeight = useRef(document.getElementsByClassName('profile-header')[0]?.scrollHeight);
 
   useEffect(() => {
     window.addEventListener('scroll', handleStickyNavbar);

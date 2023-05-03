@@ -8,9 +8,15 @@ function Contact() {
     <section className="section">
       <h2 aria-label="Contact" className="subtitle">Contact</h2>
       <div className="contact">
-        <img src={linkedin} alt="Linkedin" aria-label="Linkedin" title="Linkedin" className="contact-logo"/>
-        <img src={github} alt="Github" aria-label="Github" title="Github" className="contact-logo"/>
-        <img src={email} alt="Email" aria-label="Email" title="Email" className="contact-logo"/>
+        <a href="https://www.linkedin.com/in/cecileferrier/" target="_blank" rel="noopener noreferrer">
+          <img src={linkedin} alt="Linkedin" aria-label="Linkedin" title="Linkedin" className="contact-logo"/>
+        </a>
+        <a href="https://github.com/cgmferrier" target="_blank" rel="noopener noreferrer">
+          <img src={github} alt="Github" aria-label="Github" title="Github" className="contact-logo"/>
+        </a>
+        <a href="mailto:cgmferrier@gmail.com">
+          <img src={email} alt="Email" aria-label="Email" title="Email" className="contact-logo"/>
+        </a>
       </div>
     </section>
   );
