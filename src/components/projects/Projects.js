@@ -9,7 +9,7 @@ import sensat from '../../img/sensat.svg';
 
 function Projects() {
   return (
-    <section className="section">
+    <section className="section projects">
       <h2 aria-label="Projects" className="subtitle">Projects</h2>
       <div className="project">
         <img src={chattyTherapy} alt="Chatty Therapy" className="project-logo"/>

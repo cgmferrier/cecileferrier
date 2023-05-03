@@ -10,7 +10,7 @@ import typescript from '../../img/typescript.png';
 
 function Skills() {
   return (
-    <section className="section">
+    <section className="section skills">
       <h2 aria-label="Skills" className="subtitle">Skills</h2>
       <div className="skillset">
         <div className="skill-col">

@@ -17,10 +17,11 @@ body {
 }
 
 .down-arrow {
-  width: 70px;
-  position: absolute;
   bottom: 0;
+  cursor: pointer;
   margin-bottom: 0.67em;
+  position: absolute;
+  width: 70px;
 }
 
 .header {
