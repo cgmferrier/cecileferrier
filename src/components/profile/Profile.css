@@ -49,6 +49,7 @@
 .nav-item {
     display: flex;
     flex: 1;
+    font-size: 1.5em;
     align-items: center;
     padding: 0 0.67em;
     width: 100%;
@@ -56,6 +57,11 @@
 
 .nav-item:nth-child(odd) {
     background: rgba(27,167,173, 0.05);
+}
+
+.nav-logo {
+    margin-right: 0.67em;
+    width: 2em;
 }
 
 .profile {
@@ -105,6 +111,10 @@ li:first-child {
 
     .nav-item:nth-child(odd) {
         background: rgba(27,167,173, 0);
+    }
+
+    .nav-logo {
+        display: none;
     }
 
     .navbar {

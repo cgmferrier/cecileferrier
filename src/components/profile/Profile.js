@@ -5,7 +5,11 @@ import Projects from '../projects/Projects';
 import Skills from '../skills/Skills';
 import close from '../../img/close.png';
 import logo from '../../img/CF.svg';
+import info from '../../img/info.png';
 import menuIcon from '../../img/burger-bar.png';
+import projects from '../../img/projects.png';
+import skills from '../../img/skills.png';
+import contact from '../../img/contact.png';
 import scrollIntoView from 'scroll-into-view';
 import { cl } from 'dynamic-class-list';
 import { useEffect, useState } from 'react';
@@ -50,10 +54,22 @@ const Profile = () => {
       </div>
       <ul className={cl({ navbar: true, open: menuOpen, sticky })} aria-label="Navigation">
         <li><img src={close} alt="Close menu" className="close" onClick={toggleMenu}/></li>
-        <li aria-label="About" className="nav-item" onClick={() => scrollTo('profile-header')}>About</li>
-        <li aria-label="Projects" className="nav-item" onClick={() => scrollTo('projects')}>Projects</li>
-        <li aria-label="Skills" className="nav-item" onClick={() => scrollTo('skills')}>Skills</li>
-        <li aria-label="Contact" className="nav-item" onClick={() => scrollTo('contact')}>Contact</li>
+        <li aria-label="About" className="nav-item" onClick={() => scrollTo('profile-header')}>
+          <img src={info} alt="Info icon" className="nav-logo"/>
+          About
+        </li>
+        <li aria-label="Projects" className="nav-item" onClick={() => scrollTo('projects')}>
+          <img src={projects} alt="Projects icon" className="nav-logo"/>
+          Projects
+        </li>
+        <li aria-label="Skills" className="nav-item" onClick={() => scrollTo('skills')}>
+          <img src={skills} alt="Skills icon" className="nav-logo"/>
+          Skills
+        </li>
+        <li aria-label="Contact" className="nav-item" onClick={() => scrollTo('contact')}>
+          <img src={contact} alt="Contact icon" className="nav-logo"/>
+          Contact
+        </li>
       </ul>
       <About sticky={sticky} />
       <Projects />
